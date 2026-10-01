@@ -1,0 +1,32 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+
+import java.util.ArrayList; 
+
+/**
+ *
+ * @author balla
+ */
+public class Commande {
+    private int idCommande;
+    private Client client;
+    private ArrayList<Produit> produitsCommandes;
+    private double total;
+
+    public Commande(int idCommande, Client client, ArrayList<Produit> produitsCommandes, double total) {
+        this.idCommande = idCommande;
+        this.client = client;
+        this.produitsCommandes = produitsCommandes;
+        this.total = total;
+    }
+    public void afficherDetailsCommande(){
+        System.out.println("idCommande: " + this.idCommande);
+        System.out.println("Client: " + this.client);
+        System.out.println("produits commandes: " + this.produitsCommandes);
+        System.out.println("Total: " + this.total +"€");        
+    }
+   
+    
+}
